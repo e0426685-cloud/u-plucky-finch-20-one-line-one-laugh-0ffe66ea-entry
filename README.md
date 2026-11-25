@@ -10,6 +10,6 @@ One funny line, entered in [One Line, One Laugh](https://make.fun/competitions/u
 
 > My fitness tracker congratulated me for burning 400 calories. I was just angrily pacing while my code refused to compile.
 
-## How it works
+## What the script does
 
-`main.py` (Python standard library only) writes the line to `/output/entry.txt` and sets its permissions to `0644` so the grader can read it. A small `validate()` checks the text is non-empty, a single line, and within the 200-character limit.
+`main.py` uses only the Python standard library. It keeps the joke in one place, runs three quick sanity checks on it — not blank, one line, no more than 200 characters — and then saves it to `/output/entry.txt` with world-readable permissions so the grader can open it.
